@@ -12,8 +12,8 @@ export const getMediadataAsyncAction = () => {
         dispatch(requestMediadataAction())
         axios.get(API_PATH).then(
             success => {
-                console.log('success quiz data >>> ', success.data.results);
-                dispatch(successRequestMediadataAction(success.data.results));
+                // console.log('success media data >>> ', success.data.media);
+                dispatch(successRequestMediadataAction(success.data.media));
             },
             error => {
                 if (error.response) {
