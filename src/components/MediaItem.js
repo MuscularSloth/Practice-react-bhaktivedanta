@@ -23,10 +23,11 @@ export default function MediaItem({mediaItemData, index}) {
                 {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
             </IconButton>
             </TableCell>
-            <TableCell style={{ width: 50 }}>
+            {/* <TableCell style={{ width: 50 }}>
             {mediaItemData.id}
-            </TableCell>
+            </TableCell> */}
             <TableCell>{mediaItemData.composition}</TableCell>
+            <TableCell>{mediaItemData.page}</TableCell>
             <TableCell style={{ width: 250 }} >{mediaItemData.date}</TableCell>
             <TableCell style={{ width: 250 }}>
                 <Box style={{display: 'flex', alignItems: 'center'}}>
