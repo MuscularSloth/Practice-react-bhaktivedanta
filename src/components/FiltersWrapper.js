@@ -20,7 +20,7 @@ export default function FiltersWrapper({setSelectedTeacher, setSelectedYear, set
             if(media.teacher.name){
                 allTeachers.push(media.teacher.name)
             }
-            if(media.composition){
+            if(media.date){
                 allDates.push(media.date)
             }
             if(media.composition){
